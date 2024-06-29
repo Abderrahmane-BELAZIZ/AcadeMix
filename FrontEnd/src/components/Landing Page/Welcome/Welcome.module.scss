@@ -1,0 +1,58 @@
+// YourComponent.module.scss
+.container {
+    display: flex;
+  }
+.div{
+    width: 50%;
+}
+  .Header {
+    position: absolute;
+    top: 189px;
+    right: 45%;
+    font-size: 2rem;
+    font-weight: bold;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 150px;
+    text-align: center;
+    background: linear-gradient(90deg, #2A4FF6 0.67%, #A020F0 99.43%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    // Add any additional styles you need
+  }
+
+  .Link {
+    position: absolute;
+    width: 158px;
+    height: 60.25px;
+    left: 22%;
+    top: 526px;
+    font-size: 1.25rem;
+    background: linear-gradient(90deg, #2A4FF6 0%, #A020F0 100%);
+    box-shadow: 0px 8px 21px rgba(0, 0, 0, 0.16);
+    border-radius: 29px;
+    color: #ffffff;
+    transition: background-color 0.3s;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 59.5px;
+    text-align: center;
+    text-decoration: none;
+    cursor:pointer;
+    &:hover {
+        background: linear-gradient(90deg, #2A4FF6 0%, #A020F0 40%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        box-shadow: 0px 8px 21px rgba(0, 0, 0, 0.16);
+        }
+  }
+
+  .img {
+    max-width: 100%;
+    height: auto;
+    margin-top: -30px; // Move the image up within its container
+  }
