@@ -11,7 +11,9 @@
         }
     }
     &_links{
-        gap: 60px;
+        position: relative;
+        left: 3%;
+        gap: 50px;
         display: flex;
         list-style: none;
         li {
@@ -49,14 +51,12 @@
         border-radius: 16px;
         box-shadow: 0px 8px 21px rgba(0, 0, 0, 0.16);
         cursor: pointer;
-        transition: color 0.7s;
         &:hover {
             background: linear-gradient(90deg, #2A4FF6 0%, #A020F0 100%);
             color: transparent;
             -webkit-background-clip: border-box;
             background-clip: border-box;
             -webkit-text-fill-color: #fff;
-            text-fill-color: #fff;
         }
     }
     &_signup{

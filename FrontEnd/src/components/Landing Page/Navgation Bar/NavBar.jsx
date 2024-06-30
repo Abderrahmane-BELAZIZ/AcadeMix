@@ -15,10 +15,10 @@ function NavBar() {
                         <li><a href="#blogs" >Blogs</a></li>
                     </ul>
                     <div className="flex space-x-4">
-                        <a className={`${styles.nav_login} hidden md:block bg-transparent  text-blue-600 py-2 px-4 rounded-lg  transition`}>
+                        <a href='#' className={`${styles.nav_login} hidden md:block bg-transparent  text-blue-600 py-2 px-4 rounded-lg`}>
                         Log In
                         </a>
-                        <a className={`${styles.nav_signup} hidden md:block bg-transparent   py-2 px-4 rounded-lg  transition`}>
+                        <a className={`${styles.nav_signup} hidden md:block bg-transparent   py-2 px-4 rounded-lg  `}>
                         Sign Up
                         </a>
                     </div>

@@ -1,38 +1,37 @@
-.container{
-    /* Rectangle 1207 */
+$main : linear-gradient(90deg, #2a4ff6, #a020f0);
+.container {
+    position: relative; // Ensure the container is positioned relative to contain the pseudo-element.
+    padding-bottom: 5px; // Add some space for the pseudo-element to appear as a border.
+    &::after {
+      content: ''; // Create a pseudo-element.
+      position: absolute;
+      left: 0;
+      bottom: 0; // Position it at the bottom.
+      width: 100%;
+      height: 2px; // Thickness of the border.
+      background: $main; // Apply the gradient.
+    }
+  }
 
 
-
-}
-.header{
-    /* About Us */
-
-
-
-
-}
-.title{
-/* World-Class Education */
-
-
-
-
-
-}
-.text{
-    /* At AcadeMix , we're dedicated to revolutionizing education through technology. Our platform provides students with everything they need to succeed, from engaging videos to personalized tutoring and career guidance. Join us and embark on a journey towards a brighter future of learning! */
-
-
-}
-
-.span{
-    background: linear-gradient(90deg, #2A4FF6 0.67%, #A020F0 99.43%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-}
-.img{
-   /* Capture_d_écran_2024-06-20_064956-removebg-preview 1 */
-
-
-}
+.learnMoreButton {
+    margin-top: 1.5rem; // Equivalent to mt-6 in Tailwind
+    padding: 0.75rem 1.5rem; // Equivalent to px-6 py-3 in Tailwind
+    font-size: 1.125rem; // Equivalent to text-lg in Tailwind
+    font-weight: 600; // Equivalent to font-semibold in Tailwind
+    background: #ffffff; // White background
+    background-clip: border-box;
+    color: transparent; // Start with transparent text to apply the gradient
+    background-image: $main;
+    -webkit-background-clip: text; // Apply gradient to text
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Add a subtle shadow
+    border-radius: 0.5rem; // Equivalent to rounded-lg in Tailwind
+    border: 2px solid transparent;
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    &:hover {
+      color: #ffffff; // Change text color to white
+      -webkit-background-clip: border-box; // Apply gradient to background
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); // Increase shadow on hover
+    }
+  }
